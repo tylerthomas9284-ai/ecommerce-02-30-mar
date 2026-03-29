@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oversized Logo Tee — BLOK SUPPLY</title>
+  <meta name="description" content="The BLOK SUPPLY signature oversized tee. 100% 240gsm heavyweight combed cotton, drop-shoulder cut, screen-printed block logo. $45.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ad-disclosure"><p>Advertisement — Sponsored Content</p></div>
+<div class="ann-bar"><div class="ann-bar-track"><span>Free shipping over $75</span><span>30-day free returns</span><span>Cash on delivery available</span><span>Brooklyn-born. Globally worn</span><span>Free shipping over $75</span><span>30-day free returns</span><span>Cash on delivery available</span><span>Brooklyn-born. Globally worn</span></div></div>
+<header class="site-header">
+  <a href="index.html" class="logo"><span class="logo-blok">BLOK</span><span class="logo-supply">SUPPLY</span></a>
+  <nav><ul class="main-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="index.html#products">Shop</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <div class="header-right"><a href="cart.html" class="cart-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Cart <span class="cart-count">0</span></a><button class="menu-btn" id="menuBtn">☰</button></div>
+</header>
+<nav class="mobile-nav" id="mobileNav"><button class="mobile-nav-close" id="mobileClose">✕</button><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#products">Shop All</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a></nav>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="index.html#products">Shop</a><span class="sep">/</span><span>Oversized Logo Tee</span></div>
+
+<section class="product-detail-page">
+  <div class="container">
+    <div class="pd-grid">
+      <div class="pd-gallery">
+        <div class="pd-main-img"><img id="mainImg" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop&q=80" alt="Oversized Logo Tee front view"></div>
+        <div class="pd-thumbs">
+          <div class="pd-thumb active" onclick="switchImg(this,'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop&q=80')"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=160&h=180&fit=crop&q=80" alt="View 1"></div>
+          <div class="pd-thumb" onclick="switchImg(this,'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=800&h=1000&fit=crop&q=80')"><img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=160&h=180&fit=crop&q=80" alt="View 2"></div>
+          <div class="pd-thumb" onclick="switchImg(this,'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&h=1000&fit=crop&q=80')"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=160&h=180&fit=crop&q=80" alt="View 3"></div>
+        </div>
+      </div>
+      <div class="pd-info">
+        <div class="pd-cat">Tops / BSC-001</div>
+        <h1 class="pd-name">Oversized Logo Tee</h1>
+        <div class="pd-price">$45</div>
+        <p class="pd-desc">The BLOK SUPPLY signature oversized tee. Made from 100% heavyweight combed cotton, this drop-shoulder design carries our iconic block logo screen-printed across the chest. Built loose, worn proud. The kind of tee you reach for first.</p>
+
+        <div class="pd-option-label">Color</div>
+        <div class="size-options" style="margin-bottom:24px;">
+          <button class="size-btn active" style="min-width:80px;">White</button>
+          <button class="size-btn" style="min-width:80px;">Black</button>
+          <button class="size-btn" style="min-width:80px;">Forest</button>
+        </div>
+
+        <div class="pd-option-label">Size — <a href="#" style="font-size:11px;color:var(--red);font-weight:700;">Size Guide</a></div>
+        <div class="size-options">
+          <button class="size-btn">XS</button>
+          <button class="size-btn active">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+          <button class="size-btn">XXL</button>
+        </div>
+
+        <div class="qty-row">
+          <div class="pd-option-label" style="margin-bottom:0;">Quantity</div>
+          <div class="qty-ctrl">
+            <button onclick="changeQty(-1)">−</button>
+            <span id="qtyVal">1</span>
+            <button onclick="changeQty(1)">+</button>
+          </div>
+        </div>
+
+        <div class="pd-actions">
+          <button class="btn btn-primary btn-lg" onclick="handleAddToCart()">Add to Cart</button>
+          <button class="btn btn-dark btn-lg" onclick="handleQuickOrder()">Quick Order</button>
+        </div>
+
+        <div class="pd-features-box">
+          <div class="pd-features-head">Product Details</div>
+          <ul class="pd-features-list">
+            <li>100% 240gsm combed ring-spun cotton</li>
+            <li>Pre-shrunk — true to size wash after wash</li>
+            <li>Drop-shoulder, oversized boxy cut</li>
+            <li>Ribbed crew neck with double-stitched hem</li>
+            <li>Screen-printed block logo — never heat-pressed</li>
+            <li>Machine wash cold, tumble dry low</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="related-section">
+  <div class="container">
+    <div class="section-header-row">
+      <div><p class="section-label">You May Also Like</p><h2 class="section-heading">Complete the Look</h2></div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card"><div class="product-img-wrap"><a href="product-cargo-utility-pants.html"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=530&fit=crop&q=80" alt="Cargo Utility Pants" loading="lazy"></a></div><div class="product-info"><div class="product-cat">Bottoms</div><div class="product-name">Cargo Utility Pants</div><div class="product-price">$120</div></div><div class="product-actions"><a href="product-cargo-utility-pants.html" class="btn btn-outline btn-sm">View</a><button class="btn btn-dark btn-sm" onclick="openModal('I want to order Cargo Utility Pants')">Quick Order</button></div></div>
+      <div class="product-card"><div class="product-img-wrap"><a href="product-block-letter-hoodie.html"><img src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400&h=530&fit=crop&q=80" alt="Block Letter Hoodie" loading="lazy"></a></div><div class="product-info"><div class="product-cat">Tops</div><div class="product-name">Block Letter Hoodie</div><div class="product-price">$95</div></div><div class="product-actions"><a href="product-block-letter-hoodie.html" class="btn btn-outline btn-sm">View</a><button class="btn btn-dark btn-sm" onclick="openModal('I want to order Block Letter Hoodie')">Quick Order</button></div></div>
+      <div class="product-card"><div class="product-img-wrap"><a href="product-mesh-trucker-cap.html"><img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400&h=530&fit=crop&q=80" alt="Mesh Trucker Cap" loading="lazy"></a></div><div class="product-info"><div class="product-cat">Accessories</div><div class="product-name">Mesh Trucker Cap</div><div class="product-price">$35</div></div><div class="product-actions"><a href="product-mesh-trucker-cap.html" class="btn btn-outline btn-sm">View</a><button class="btn btn-dark btn-sm" onclick="openModal('I want to order Mesh Trucker Cap')">Quick Order</button></div></div>
+      <div class="product-card"><div class="product-img-wrap"><a href="product-jogger-set.html"><img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=530&fit=crop&q=80" alt="Jogger Set" loading="lazy"></a></div><div class="product-info"><div class="product-cat">Sets</div><div class="product-name">Jogger Set (2-piece)</div><div class="product-price">$140</div></div><div class="product-actions"><a href="product-jogger-set.html" class="btn btn-outline btn-sm">View</a><button class="btn btn-dark btn-sm" onclick="openModal('I want to order Jogger Set')">Quick Order</button></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer"><div class="footer-main"><div><div class="footer-logo"><span class="footer-logo-blok">BLOK</span><span class="footer-logo-supply">SUPPLY</span></div><p class="footer-desc">Brooklyn-born streetwear brand.</p><div class="footer-contact"><p><strong>Address:</strong> 240 Fulton Street, Suite 4B, Brooklyn, NY 11201</p><p><strong>Phone:</strong> (877) 556-2930</p><p><strong>Email:</strong> hello@bloksupply.site</p></div></div><div class="footer-col"><div class="footer-col-title">Shop</div><ul><li><a href="index.html#products">All Products</a></li><li><a href="cart.html">My Cart</a></li></ul></div><div class="footer-col"><div class="footer-col-title">Company</div><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><div class="footer-col-title">Legal</div><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 BLOK SUPPLY. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms-conditions.html">Terms</a><a href="contact.html">Contact</a></div></div></footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="leadModal"><div class="modal"><div class="modal-head"><div class="modal-title">Quick Order</div><button class="modal-close" onclick="closeModal()">✕</button></div><div class="modal-body"><p class="modal-sub">Fill in your details and we'll confirm your order within 24 hours.</p><form id="leadForm"><div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" type="text" id="modalName" placeholder="Your full name" required></div><div class="form-group"><label class="form-label">Email Address *</label><input class="form-input" type="email" id="modalEmail" placeholder="your@email.com" required></div><div class="form-group"><label class="form-label">Phone Number *</label><input class="form-input" type="tel" id="modalPhone" placeholder="(555) 000-0000" required></div><div class="form-group"><label class="form-label">What are you looking for? *</label><textarea class="form-input" id="modalMessage" rows="3" required></textarea></div><div class="form-checkbox"><input type="checkbox" id="modalConsent" required><label for="modalConsent">I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-conditions.html" target="_blank">Terms</a>.</label></div><button type="submit" class="btn btn-primary btn-full">Send Order Request</button></form></div></div></div>
+<div class="success-popup" id="successPopup"><div class="success-box"><div class="success-icon">✓</div><div class="success-title" id="successTitle">Added!</div><p class="success-desc" id="successDesc">Your request was received.</p><button class="success-close" onclick="closeSuccess()">Close</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none;"><p class="cookie-text">We use cookies to improve your experience. <a href="privacy-policy.html">Privacy Policy</a>.</p><div class="cookie-btns"><button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button><button class="btn btn-outline btn-sm" id="declineCookies">Decline</button></div></div>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+let qty = 1;
+function changeQty(d) { qty = Math.max(1, qty + d); document.getElementById('qtyVal').textContent = qty; }
+function getSelectedSize() { const a = document.querySelector('.size-options .size-btn.active'); return a ? a.textContent.trim() : 'M'; }
+function handleAddToCart() {
+  addToCart('BSC-001', getSelectedSize(), qty);
+  showSuccess('Added to Cart!', 'Oversized Logo Tee (Size: ' + getSelectedSize() + ') added to your cart.');
+}
+function handleQuickOrder() { openModal('I want to order the Oversized Logo Tee (Size: ' + getSelectedSize() + ', Qty: ' + qty + ') — BSC-001 — $45'); }
+function switchImg(thumb, src) {
+  document.getElementById('mainImg').src = src;
+  document.querySelectorAll('.pd-thumb').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+</script>
+</body>
+</html>

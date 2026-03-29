@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — BLOK SUPPLY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ad-disclosure"><p>Advertisement — Sponsored Content</p></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo"><span class="logo-blok">BLOK</span><span class="logo-supply">SUPPLY</span></a>
+  <nav><ul class="main-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#products">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="header-right">
+    <a href="cart.html" class="cart-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      Cart <span class="cart-count">0</span>
+    </a>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <p class="page-header-tag">Secure Checkout</p>
+    <h1 class="page-header-title">Checkout</h1>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span class="sep">/</span>
+  <a href="cart.html">Cart</a><span class="sep">/</span>
+  <span>Checkout</span>
+</div>
+
+<section class="checkout-page">
+  <div class="container">
+    <div class="checkout-grid">
+
+      <!-- LEFT: Forms -->
+      <div>
+
+        <!-- CONTACT INFO -->
+        <div class="checkout-section">
+          <div class="checkout-sec-head">
+            <div class="checkout-sec-num">1</div>
+            <h3>Contact Information</h3>
+          </div>
+          <div class="checkout-sec-body">
+            <div class="form-row-2">
+              <div class="form-group"><label class="form-label">First Name *</label><input class="form-input" type="text" id="coFirstName" placeholder="First name" required></div>
+              <div class="form-group"><label class="form-label">Last Name *</label><input class="form-input" type="text" id="coLastName" placeholder="Last name" required></div>
+            </div>
+            <div class="form-group"><label class="form-label">Email Address *</label><input class="form-input" type="email" id="coEmail" placeholder="your@email.com" required></div>
+            <div class="form-group"><label class="form-label">Phone Number *</label><input class="form-input" type="tel" id="coPhone" placeholder="(555) 000-0000" required></div>
+          </div>
+        </div>
+
+        <!-- SHIPPING ADDRESS -->
+        <div class="checkout-section">
+          <div class="checkout-sec-head">
+            <div class="checkout-sec-num">2</div>
+            <h3>Shipping Address</h3>
+          </div>
+          <div class="checkout-sec-body">
+            <div class="form-group"><label class="form-label">Street Address *</label><input class="form-input" type="text" id="coStreet" placeholder="123 Main Street" required></div>
+            <div class="form-group"><label class="form-label">Apartment / Suite (optional)</label><input class="form-input" type="text" id="coApt" placeholder="Apt 4B"></div>
+            <div class="form-row-2">
+              <div class="form-group"><label class="form-label">City *</label><input class="form-input" type="text" id="coCity" placeholder="Brooklyn" required></div>
+              <div class="form-group"><label class="form-label">State *</label>
+                <select class="form-input form-select" id="coState" required>
+                  <option value="">Select state</option>
+                  <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option selected>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-group"><label class="form-label">ZIP Code *</label><input class="form-input" type="text" id="coZip" placeholder="11201" required maxlength="5"></div>
+              <div class="form-group"><label class="form-label">Country</label><input class="form-input" type="text" value="United States" readonly style="background:#f0f0ea;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAYMENT METHOD -->
+        <div class="checkout-section">
+          <div class="checkout-sec-head">
+            <div class="checkout-sec-num">3</div>
+            <h3>Payment Method</h3>
+          </div>
+          <div class="checkout-sec-body">
+
+            <!-- Credit / Debit Card -->
+            <div class="payment-opt active" onclick="selectPayment(this)">
+              <input type="radio" name="payment" value="card" checked>
+              <div>
+                <div class="payment-opt-label">Credit / Debit Card</div>
+                <div class="payment-opt-desc">Visa, Mastercard, American Express</div>
+              </div>
+            </div>
+            <div class="payment-panel show" id="cardPanel">
+              <div class="form-group"><label class="form-label">Card Number *</label><input class="form-input" type="text" placeholder="1234 5678 9012 3456" maxlength="19" id="cardNum"></div>
+              <div class="form-row-2">
+                <div class="form-group"><label class="form-label">Expiry Date *</label><input class="form-input" type="text" placeholder="MM / YY" maxlength="7" id="cardExp"></div>
+                <div class="form-group"><label class="form-label">CVV *</label><input class="form-input" type="text" placeholder="123" maxlength="4" id="cardCvv"></div>
+              </div>
+              <div class="form-group"><label class="form-label">Name on Card *</label><input class="form-input" type="text" placeholder="Full name as on card" id="cardName"></div>
+              <p style="font-size:12px;color:#888;margin-top:8px;">🔒 Your card information is encrypted and secure. We never store full card numbers.</p>
+            </div>
+
+            <!-- PayPal -->
+            <div class="payment-opt" onclick="selectPayment(this)">
+              <input type="radio" name="payment" value="paypal">
+              <div>
+                <div class="payment-opt-label">PayPal</div>
+                <div class="payment-opt-desc">You'll be redirected to PayPal to complete your payment</div>
+              </div>
+            </div>
+            <div class="payment-panel" id="paypalPanel">
+              <p style="font-size:13px;color:#555;">After clicking "Place Order," you'll be redirected to PayPal's secure checkout. Return here once your payment is confirmed.</p>
+            </div>
+
+            <!-- Cash on Delivery -->
+            <div class="payment-opt" onclick="selectPayment(this)">
+              <input type="radio" name="payment" value="cod">
+              <div>
+                <div class="payment-opt-label">Cash on Delivery (COD)</div>
+                <div class="payment-opt-desc">Pay in cash when your order arrives at your door</div>
+              </div>
+            </div>
+            <div class="payment-panel" id="codPanel">
+              <div style="background:#fff;border:var(--border);padding:16px;margin-bottom:12px;">
+                <h4 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">How COD Works</h4>
+                <ul style="list-style:none;font-size:13px;color:#555;line-height:1.7;">
+                  <li>✓ Place your order — no payment needed now</li>
+                  <li>✓ Our team will call to confirm your order within 24 hours</li>
+                  <li>✓ Your order ships within 2-3 business days</li>
+                  <li>✓ Pay the delivery person in cash when your package arrives</li>
+                </ul>
+              </div>
+              <div class="form-group"><label class="form-label">Preferred Delivery Time (optional)</label>
+                <select class="form-input form-select" id="codTime">
+                  <option value="">No preference</option>
+                  <option>Morning (8am – 12pm)</option>
+                  <option>Afternoon (12pm – 5pm)</option>
+                  <option>Evening (5pm – 8pm)</option>
+                </select>
+              </div>
+              <div class="form-group"><label class="form-label">Order Notes (optional)</label><textarea class="form-input" placeholder="Any special delivery instructions..." rows="2" id="codNotes"></textarea></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CONSENT & SUBMIT -->
+        <div class="checkout-section">
+          <div class="checkout-sec-body">
+            <div class="form-checkbox" style="margin-bottom:20px;">
+              <input type="checkbox" id="checkoutConsent" required>
+              <label for="checkoutConsent">I agree to BLOK SUPPLY's <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-conditions.html" target="_blank">Terms &amp; Conditions</a>. I confirm my order details are correct.</label>
+            </div>
+            <button class="btn btn-primary btn-full btn-lg" onclick="placeOrder()">Place Order →</button>
+            <p style="font-size:12px;color:#888;text-align:center;margin-top:12px;">🔒 Secure checkout. Your data is protected.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Order Summary -->
+      <div>
+        <div class="order-summary-box">
+          <div class="order-sum-head">
+            <h3>Order Summary</h3>
+          </div>
+          <div class="order-sum-body">
+            <div id="orderItemsList">
+              <!-- Filled by JS -->
+            </div>
+            <div class="order-totals">
+              <div class="order-row"><span>Subtotal</span><span id="checkoutSubtotal">$0.00</span></div>
+              <div class="order-row"><span>Shipping</span><span id="checkoutShipping">$0.00</span></div>
+              <div class="order-row"><span>Estimated Tax</span><span id="checkoutTax">$0.00</span></div>
+              <div class="order-row grand"><span>Total</span><span id="checkoutTotal">$0.00</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:12px;border:var(--border);padding:16px;background:var(--gray);font-size:12px;color:#555;line-height:1.6;">
+          <strong style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Return Policy</strong>
+          Free 30-day returns on all unworn items in original condition. Contact us at <a href="mailto:hello@bloksupply.site" style="color:var(--black);font-weight:700;">hello@bloksupply.site</a> to start a return.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div>
+      <div class="footer-logo"><span class="footer-logo-blok">BLOK</span><span class="footer-logo-supply">SUPPLY</span></div>
+      <p class="footer-desc">Brooklyn-born streetwear brand built on quality materials and honest craftsmanship.</p>
+      <div class="footer-contact">
+        <p><strong>Address:</strong> 240 Fulton Street, Suite 4B, Brooklyn, NY 11201</p>
+        <p><strong>Phone:</strong> (877) 556-2930</p>
+        <p><strong>Email:</strong> hello@bloksupply.site</p>
+      </div>
+    </div>
+    <div class="footer-col"><div class="footer-col-title">Help</div><ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="cart.html">My Cart</a></li>
+      <li><a href="index.html#products">Shop All</a></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Legal</div><ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 BLOK SUPPLY. All rights reserved. | bloksupply.site</p>
+  </div>
+</footer>
+
+<!-- ORDER SUCCESS MODAL -->
+<div class="order-modal" id="orderModal">
+  <div class="order-box">
+    <div class="order-success-icon">🎉</div>
+    <div class="order-num" id="orderNumber">Order #BS-000000</div>
+    <h2>Order Confirmed!</h2>
+    <p id="orderMsg">Your order has been placed and will ship within 2-3 business days.</p>
+    <button class="btn btn-primary btn-full" onclick="closeOrderModal()">Continue Shopping</button>
+  </div>
+</div>
+
+<div class="success-popup" id="successPopup">
+  <div class="success-box">
+    <div class="success-icon">✓</div>
+    <div class="success-title" id="successTitle">Done!</div>
+    <p class="success-desc" id="successDesc">Action completed.</p>
+    <button class="success-close" onclick="closeSuccess()">Close</button>
+  </div>
+</div>
+
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+  <p class="cookie-text">We use cookies to improve your experience. By clicking "Accept," you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
+    <button class="btn btn-outline btn-sm" id="declineCookies">Decline</button>
+  </div>
+</div>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  renderOrderSummary();
+
+  // Card number formatting
+  const cardInput = document.getElementById('cardNum');
+  if (cardInput) {
+    cardInput.addEventListener('input', function () {
+      let val = this.value.replace(/\D/g, '').substring(0, 16);
+      this.value = val.replace(/(.{4})/g, '$1 ').trim();
+    });
+  }
+  const expInput = document.getElementById('cardExp');
+  if (expInput) {
+    expInput.addEventListener('input', function () {
+      let val = this.value.replace(/\D/g, '').substring(0, 4);
+      if (val.length >= 2) val = val.substring(0, 2) + ' / ' + val.substring(2);
+      this.value = val;
+    });
+  }
+});
+
+function renderOrderSummary() {
+  const cart = getCart();
+  const listEl = document.getElementById('orderItemsList');
+
+  if (!cart.length) {
+    listEl.innerHTML = '<p style="color:#aaa;font-size:13px;padding:12px 0;">Your cart is empty. <a href="index.html#products" style="color:var(--yellow);">Shop now</a></p>';
+    return;
+  }
+
+  listEl.innerHTML = cart.map(item => `
+    <div class="order-item">
+      <img class="order-item-img" src="${item.image}" alt="${item.name}">
+      <div>
+        <div class="order-item-name">${item.name}</div>
+        <div class="order-item-meta">Size: ${item.size} · Qty: ${item.qty}</div>
+      </div>
+      <div class="order-item-price">$${(item.price * item.qty).toFixed(2)}</div>
+    </div>
+  `).join('');
+
+  const sub = getCartSubtotal();
+  const ship = sub >= 75 ? 0 : 8.99;
+  const tax = sub * 0.08;
+  document.getElementById('checkoutSubtotal').textContent = '$' + sub.toFixed(2);
+  document.getElementById('checkoutShipping').textContent = ship === 0 ? 'FREE' : '$' + ship.toFixed(2);
+  document.getElementById('checkoutTax').textContent = '$' + tax.toFixed(2);
+  document.getElementById('checkoutTotal').textContent = '$' + (sub + ship + tax).toFixed(2);
+}
+
+function selectPayment(el) {
+  document.querySelectorAll('.payment-opt').forEach(o => o.classList.remove('active'));
+  document.querySelectorAll('.payment-panel').forEach(p => p.classList.remove('show'));
+  el.classList.add('active');
+  const radio = el.querySelector('input[type="radio"]');
+  if (radio) {
+    radio.checked = true;
+    const panel = document.getElementById(radio.value + 'Panel');
+    if (panel) panel.classList.add('show');
+  }
+}
+
+function placeOrder() {
+  const consent = document.getElementById('checkoutConsent');
+  if (!consent || !consent.checked) {
+    alert('Please accept the terms and conditions to continue.');
+    return;
+  }
+
+  const firstName = document.getElementById('coFirstName').value.trim();
+  const email = document.getElementById('coEmail').value.trim();
+  const phone = document.getElementById('coPhone').value.trim();
+  const street = document.getElementById('coStreet').value.trim();
+  const city = document.getElementById('coCity').value.trim();
+  const state = document.getElementById('coState').value;
+  const zip = document.getElementById('coZip').value.trim();
+
+  if (!firstName || !email || !phone || !street || !city || !state || !zip) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  const cart = getCart();
+  if (!cart.length) {
+    alert('Your cart is empty.');
+    return;
+  }
+
+  const payMethod = document.querySelector('input[name="payment"]:checked').value;
+
+  if (payMethod === 'card') {
+    const cardNum = document.getElementById('cardNum').value.trim();
+    const cardExp = document.getElementById('cardExp').value.trim();
+    const cardCvv = document.getElementById('cardCvv').value.trim();
+    const cardName = document.getElementById('cardName').value.trim();
+    if (!cardNum || !cardExp || !cardCvv || !cardName) {
+      alert('Please complete your card information.');
+      return;
+    }
+  }
+
+  showOrderSuccess(payMethod);
+}
+</script>
+</body>
+</html>

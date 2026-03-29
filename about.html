@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About BLOK SUPPLY — Brooklyn Streetwear Brand</title>
+  <meta name="description" content="Learn about BLOK SUPPLY — a Brooklyn-born streetwear brand built on premium materials, honest craftsmanship, and clothes that move with you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ad-disclosure"><p>Advertisement — Sponsored Content</p></div>
+
+<div class="ann-bar">
+  <div class="ann-bar-track">
+    <span>Free shipping on orders over $75</span><span>New drops every Friday</span><span>Made for the streets, built to last</span><span>Brooklyn-born. Globally worn</span><span>Free returns within 30 days</span>
+    <span>Free shipping on orders over $75</span><span>New drops every Friday</span><span>Made for the streets, built to last</span><span>Brooklyn-born. Globally worn</span><span>Free returns within 30 days</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <a href="index.html" class="logo"><span class="logo-blok">BLOK</span><span class="logo-supply">SUPPLY</span></a>
+  <nav><ul class="main-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#products">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="header-right">
+    <a href="cart.html" class="cart-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      Cart <span class="cart-count">0</span>
+    </a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#products">Shop All</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a>
+</nav>
+
+<!-- ABOUT HERO -->
+<div class="about-hero">
+  <div class="about-hero-content">
+    <p class="section-label">Who We Are</p>
+    <h1 class="hero-title" style="font-size:clamp(44px,5.5vw,80px);">One Block.<br><span class="invert">One Vision.</span></h1>
+    <p style="font-size:17px;color:#444;line-height:1.75;margin-top:24px;max-width:520px;">BLOK SUPPLY started in 2019 on a single block in Bed-Stuy, Brooklyn with a simple conviction: the streets deserve better clothes. Not faster clothes. Not cheaper clothes. Better ones. We set out to build a brand that treats its customers like adults — no hype, no gimmicks, no artificial scarcity. Just premium streetwear, honestly made and fairly priced.</p>
+    <div style="margin-top:36px;display:flex;gap:16px;flex-wrap:wrap;">
+      <button class="btn btn-primary" onclick="openModal('I want to learn more about BLOK SUPPLY')">Work with Us</button>
+      <a href="index.html#products" class="btn btn-dark">Shop the Collection</a>
+    </div>
+  </div>
+  <div class="about-hero-img">
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&h=700&fit=crop&q=80" alt="BLOK SUPPLY team in Brooklyn" loading="eager">
+  </div>
+</div>
+
+<!-- BRAND VALUES -->
+<section style="padding:80px 0;background:var(--black);border-bottom:var(--border);">
+  <div class="container">
+    <div class="section-header-row" style="border-bottom-color:#222;">
+      <div>
+        <p class="section-label" style="color:#555;">What Drives Us</p>
+        <h2 class="section-heading" style="color:var(--white);">Our Three Non-Negotiables</h2>
+      </div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <div class="value-title">Material Integrity</div>
+        <p class="value-desc">Every single piece we release starts with the fabric. We use 240gsm+ combed cotton for tops, durable cotton-twill blends for bottoms, and YKK hardware on every zipper. If a material doesn't hold up in our tests, it doesn't make the cut.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <div class="value-title">Honest Craftsmanship</div>
+        <p class="value-desc">We don't do heat-pressed graphics. Every logo is screen-printed or embroidered. Double-stitched hems. Reinforced stress points. We believe clothes should look better after 50 washes, not worse. That's the BLOK standard.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <div class="value-title">No Compromise Design</div>
+        <p class="value-desc">Our design team in Brooklyn obsesses over every dimension — the drop of a shoulder, the taper of a pant leg, the weight distribution of a jacket. We make clothes that fit correctly without asking you to size up or down to compensate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR PROCESS -->
+<section style="padding:80px 0;border-bottom:var(--border);">
+  <div class="container">
+    <div class="section-header-row">
+      <div>
+        <p class="section-label">How We Work</p>
+        <h2 class="section-heading">From Sketch to Street</h2>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:var(--border);box-shadow:var(--shadow);">
+      <div style="padding:40px 32px;border-right:var(--border);">
+        <div style="font-size:44px;font-weight:700;color:var(--yellow);background:var(--black);padding:0 10px;display:inline-block;margin-bottom:20px;">01</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:10px;">Research</h3>
+        <p style="font-size:14px;color:#555;line-height:1.7;">We watch how people actually dress — on the block, on the train, at the gym. Then we design for those real moments, not a mood board.</p>
+      </div>
+      <div style="padding:40px 32px;border-right:var(--border);">
+        <div style="font-size:44px;font-weight:700;color:var(--yellow);background:var(--black);padding:0 10px;display:inline-block;margin-bottom:20px;">02</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:10px;">Prototype</h3>
+        <p style="font-size:14px;color:#555;line-height:1.7;">Every piece goes through at least four sample rounds. We test fit, fabric behavior, wash durability, and how it looks after six months of regular wear.</p>
+      </div>
+      <div style="padding:40px 32px;border-right:var(--border);">
+        <div style="font-size:44px;font-weight:700;color:var(--yellow);background:var(--black);padding:0 10px;display:inline-block;margin-bottom:20px;">03</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:10px;">Produce</h3>
+        <p style="font-size:14px;color:#555;line-height:1.7;">We work with a small number of ethical manufacturing partners who share our commitment to fair labor practices and consistent quality across every unit.</p>
+      </div>
+      <div style="padding:40px 32px;">
+        <div style="font-size:44px;font-weight:700;color:var(--yellow);background:var(--black);padding:0 10px;display:inline-block;margin-bottom:20px;">04</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:10px;">Deliver</h3>
+        <p style="font-size:14px;color:#555;line-height:1.7;">Every order is quality-checked before it ships. Free shipping over $75, free returns within 30 days, and a COD option for every order, everywhere in the US.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div style="background:var(--yellow);border-top:var(--border);border-bottom:var(--border);padding:0;">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);">
+    <div style="padding:40px 32px;border-right:var(--border);text-align:center;">
+      <div style="font-size:44px;font-weight:700;letter-spacing:-0.02em;">2019</div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-top:4px;">Founded in Brooklyn</div>
+    </div>
+    <div style="padding:40px 32px;border-right:var(--border);text-align:center;">
+      <div style="font-size:44px;font-weight:700;letter-spacing:-0.02em;">10K+</div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-top:4px;">Happy Customers</div>
+    </div>
+    <div style="padding:40px 32px;border-right:var(--border);text-align:center;">
+      <div style="font-size:44px;font-weight:700;letter-spacing:-0.02em;">50</div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-top:4px;">States Reached</div>
+    </div>
+    <div style="padding:40px 32px;text-align:center;">
+      <div style="font-size:44px;font-weight:700;letter-spacing:-0.02em;">4.9★</div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-top:4px;">Average Review Rating</div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA SECTION -->
+<section style="padding:80px 40px;background:var(--black);border-top:var(--border);text-align:center;">
+  <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:16px;">Ready to Gear Up?</p>
+  <h2 style="font-size:clamp(32px,4vw,60px);font-weight:700;color:var(--white);letter-spacing:-0.03em;margin-bottom:24px;">Shop the Collection</h2>
+  <p style="font-size:16px;color:#888;max-width:480px;margin:0 auto 36px;line-height:1.7;">Ten styles. Premium materials. Free shipping over $75. Cash on delivery available nationwide.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="index.html#products" class="btn btn-primary btn-lg">Shop All Drops</a>
+    <button class="btn btn-outline btn-lg" style="color:var(--yellow);border-color:var(--yellow);" onclick="openModal('General inquiry from About page')">Get in Touch</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div>
+      <div class="footer-logo"><span class="footer-logo-blok">BLOK</span><span class="footer-logo-supply">SUPPLY</span></div>
+      <p class="footer-desc">Brooklyn-born streetwear brand built on quality materials, real craftsmanship, and no shortcuts.</p>
+      <div class="footer-contact">
+        <p><strong>Address:</strong> 240 Fulton Street, Suite 4B, Brooklyn, NY 11201</p>
+        <p><strong>Phone:</strong> (877) 556-2930</p>
+        <p><strong>Email:</strong> hello@bloksupply.site</p>
+      </div>
+    </div>
+    <div class="footer-col"><div class="footer-col-title">Shop</div><ul>
+      <li><a href="product-oversized-logo-tee.html">Oversized Logo Tee</a></li>
+      <li><a href="product-cargo-utility-pants.html">Cargo Utility Pants</a></li>
+      <li><a href="product-block-letter-hoodie.html">Block Letter Hoodie</a></li>
+      <li><a href="product-graphic-bomber-jacket.html">Graphic Bomber Jacket</a></li>
+      <li><a href="cart.html">My Cart</a></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Company</div><ul>
+      <li><a href="about.html">About BLOK</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Legal</div><ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 BLOK SUPPLY. All rights reserved. | bloksupply.site</p>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy</a><a href="terms-conditions.html">Terms</a><a href="disclaimer.html">Disclaimer</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="leadModal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title">Get in Touch</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-sub">Have a question about a product or want to place an order? Fill this out and we'll get back to you within 24 hours.</p>
+      <form id="leadForm">
+        <div class="form-group"><label class="form-label" for="modalName">Full Name *</label><input class="form-input" type="text" id="modalName" placeholder="Your full name" required></div>
+        <div class="form-group"><label class="form-label" for="modalEmail">Email Address *</label><input class="form-input" type="email" id="modalEmail" placeholder="your@email.com" required></div>
+        <div class="form-group"><label class="form-label" for="modalPhone">Phone Number *</label><input class="form-input" type="tel" id="modalPhone" placeholder="(555) 000-0000" required></div>
+        <div class="form-group"><label class="form-label" for="modalMessage">What are you looking for? *</label><textarea class="form-input" id="modalMessage" rows="3" placeholder="Tell us what you'd like..." required></textarea></div>
+        <div class="form-checkbox">
+          <input type="checkbox" id="modalConsent" required>
+          <label for="modalConsent">I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-conditions.html" target="_blank">Terms &amp; Conditions</a>.</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="success-popup" id="successPopup">
+  <div class="success-box">
+    <div class="success-icon">✓</div>
+    <div class="success-title" id="successTitle">Done!</div>
+    <p class="success-desc" id="successDesc">Your message has been received.</p>
+    <button class="success-close" onclick="closeSuccess()">Close</button>
+  </div>
+</div>
+
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+  <p class="cookie-text">We use cookies to improve your experience. By clicking "Accept," you agree to our <a href="privacy-policy.html">Privacy Policy</a> and use of cookies.</p>
+  <div class="cookie-btns">
+    <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
+    <button class="btn btn-outline btn-sm" id="declineCookies">Decline</button>
+  </div>
+</div>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

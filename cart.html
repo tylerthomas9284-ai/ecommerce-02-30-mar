@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart — BLOK SUPPLY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ad-disclosure"><p>Advertisement — Sponsored Content</p></div>
+
+<div class="ann-bar">
+  <div class="ann-bar-track">
+    <span>Free shipping on orders over $75</span><span>30-day free returns</span><span>Cash on delivery available</span><span>Brooklyn-born. Globally worn</span>
+    <span>Free shipping on orders over $75</span><span>30-day free returns</span><span>Cash on delivery available</span><span>Brooklyn-born. Globally worn</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <a href="index.html" class="logo"><span class="logo-blok">BLOK</span><span class="logo-supply">SUPPLY</span></a>
+  <nav><ul class="main-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#products">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="header-right">
+    <a href="cart.html" class="cart-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      Cart <span class="cart-count">0</span>
+    </a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#products">Shop All</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <p class="page-header-tag">Review Your Order</p>
+    <h1 class="page-header-title">My Cart</h1>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span class="sep">/</span>
+  <span>My Cart</span>
+</div>
+
+<section class="cart-page">
+  <div class="container">
+
+    <!-- EMPTY STATE (shown if cart is empty) -->
+    <div class="cart-empty" id="cartEmpty" style="display:none;">
+      <div style="font-size:64px;margin-bottom:16px;">🛒</div>
+      <div class="cart-empty-title">Your Cart is Empty</div>
+      <p class="cart-empty-desc">Looks like you haven't added anything yet. Head back to the shop and find your fit.</p>
+      <a href="index.html#products" class="btn btn-primary btn-lg">Shop All Products</a>
+    </div>
+
+    <!-- CART CONTENT -->
+    <div id="cartContent">
+      <div class="cart-layout">
+        <!-- Cart Table -->
+        <div>
+          <div class="cart-table-wrap">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th style="width:50%">Product</th>
+                  <th>Size</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="cartTableBody">
+                <!-- Filled by JS -->
+              </tbody>
+            </table>
+          </div>
+          <div style="margin-top:24px;display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;">
+            <a href="index.html#products" class="btn btn-outline">← Continue Shopping</a>
+            <button class="btn btn-outline btn-sm" onclick="openModal('I have a question about my cart')">Need Help?</button>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div>
+          <div class="cart-summary-box">
+            <div class="cart-summary-title">Order Summary</div>
+            <div class="summary-row"><span>Subtotal</span><span id="summarySubtotal">$0.00</span></div>
+            <div class="summary-row"><span>Shipping</span><span id="summaryShipping">Calculated at checkout</span></div>
+            <div class="summary-row"><span>Estimated Tax</span><span>Calculated at checkout</span></div>
+            <div class="summary-row total"><span>Estimated Total</span><span id="summaryTotal">$0.00</span></div>
+            <a href="checkout.html" class="btn btn-primary btn-full" style="margin-top:20px;" id="checkoutBtn">Proceed to Checkout →</a>
+            <p style="font-size:11px;color:#aaa;text-align:center;margin-top:12px;">Cash on Delivery available at checkout</p>
+          </div>
+
+          <div style="margin-top:16px;border:var(--border);padding:20px;background:var(--yellow);">
+            <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">We Accept</div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;font-size:13px;font-weight:700;">
+              <span style="background:var(--black);color:var(--yellow);padding:4px 10px;">VISA</span>
+              <span style="background:var(--black);color:var(--yellow);padding:4px 10px;">MASTERCARD</span>
+              <span style="background:var(--black);color:var(--yellow);padding:4px 10px;">PAYPAL</span>
+              <span style="background:var(--black);color:var(--yellow);padding:4px 10px;">COD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div>
+      <div class="footer-logo"><span class="footer-logo-blok">BLOK</span><span class="footer-logo-supply">SUPPLY</span></div>
+      <p class="footer-desc">Brooklyn-born streetwear brand built on quality materials and honest craftsmanship.</p>
+      <div class="footer-contact">
+        <p><strong>Address:</strong> 240 Fulton Street, Suite 4B, Brooklyn, NY 11201</p>
+        <p><strong>Phone:</strong> (877) 556-2930</p>
+        <p><strong>Email:</strong> hello@bloksupply.site</p>
+      </div>
+    </div>
+    <div class="footer-col"><div class="footer-col-title">Shop</div><ul>
+      <li><a href="product-oversized-logo-tee.html">Oversized Logo Tee</a></li>
+      <li><a href="product-cargo-utility-pants.html">Cargo Utility Pants</a></li>
+      <li><a href="product-block-letter-hoodie.html">Block Letter Hoodie</a></li>
+      <li><a href="product-graphic-bomber-jacket.html">Graphic Bomber Jacket</a></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Help</div><ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Legal</div><ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 BLOK SUPPLY. All rights reserved. | bloksupply.site</p>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy</a><a href="terms-conditions.html">Terms</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="leadModal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title">Need Help?</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-sub">Our team is here to help. Fill this out and we'll get back to you shortly.</p>
+      <form id="leadForm">
+        <div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" type="text" id="modalName" placeholder="Your full name" required></div>
+        <div class="form-group"><label class="form-label">Email Address *</label><input class="form-input" type="email" id="modalEmail" placeholder="your@email.com" required></div>
+        <div class="form-group"><label class="form-label">Phone Number *</label><input class="form-input" type="tel" id="modalPhone" placeholder="(555) 000-0000" required></div>
+        <div class="form-group"><label class="form-label">What are you looking for? *</label><textarea class="form-input" id="modalMessage" rows="3" required></textarea></div>
+        <div class="form-checkbox">
+          <input type="checkbox" id="modalConsent" required>
+          <label for="modalConsent">I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-conditions.html" target="_blank">Terms &amp; Conditions</a>.</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="success-popup" id="successPopup">
+  <div class="success-box">
+    <div class="success-icon">✓</div>
+    <div class="success-title" id="successTitle">Got it!</div>
+    <p class="success-desc" id="successDesc">We'll be in touch soon.</p>
+    <button class="success-close" onclick="closeSuccess()">Close</button>
+  </div>
+</div>
+
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+  <p class="cookie-text">We use cookies to improve your shopping experience. By clicking "Accept," you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
+    <button class="btn btn-outline btn-sm" id="declineCookies">Decline</button>
+  </div>
+</div>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  renderCart();
+});
+
+function renderCart() {
+  const cart = getCart();
+  const tbody = document.getElementById('cartTableBody');
+  const emptyEl = document.getElementById('cartEmpty');
+  const contentEl = document.getElementById('cartContent');
+
+  if (!cart.length) {
+    emptyEl.style.display = 'block';
+    contentEl.style.display = 'none';
+    return;
+  }
+
+  emptyEl.style.display = 'none';
+  contentEl.style.display = 'block';
+
+  tbody.innerHTML = cart.map((item, i) => `
+    <tr id="row-${item.key}">
+      <td>
+        <div class="cart-product">
+          <img class="cart-product-img" src="${item.image}" alt="${item.name}">
+          <div>
+            <div class="cart-product-name">${item.name}</div>
+            <div class="cart-product-sku">SKU: ${item.id}</div>
+          </div>
+        </div>
+      </td>
+      <td><strong>${item.size}</strong></td>
+      <td>
+        <div class="cart-qty">
+          <button onclick="changeQty('${item.key}', ${item.qty - 1})">−</button>
+          <span>${item.qty}</span>
+          <button onclick="changeQty('${item.key}', ${item.qty + 1})">+</button>
+        </div>
+      </td>
+      <td class="cart-price">$${(item.price * item.qty).toFixed(2)}</td>
+      <td><button class="cart-remove" onclick="removeItem('${item.key}')" title="Remove">✕</button></td>
+    </tr>
+  `).join('');
+
+  updateSummary(cart);
+}
+
+function changeQty(key, newQty) {
+  updateQty(key, newQty);
+  renderCart();
+}
+
+function removeItem(key) {
+  removeFromCart(key);
+  renderCart();
+}
+
+function updateSummary(cart) {
+  const sub = getCartSubtotal();
+  const ship = sub >= 75 ? 0 : 8.99;
+  document.getElementById('summarySubtotal').textContent = '$' + sub.toFixed(2);
+  document.getElementById('summaryShipping').textContent = ship === 0 ? 'FREE' : '$' + ship.toFixed(2);
+  document.getElementById('summaryTotal').textContent = '$' + (sub + ship).toFixed(2);
+}
+</script>
+</body>
+</html>
